@@ -1,0 +1,9 @@
+{{define "mytable" -}}
+    <table class="table">
+        <tbody>
+        {{- range .DB.Table}}
+            <tr><td>{{.ID}}</td><td>{{.Name}}</td></tr>
+        {{- end}}
+        </tbody>
+    </table>
+{{- end}}
